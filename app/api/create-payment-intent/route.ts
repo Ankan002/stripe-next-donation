@@ -12,9 +12,8 @@ export const POST = async (req: NextRequest) => {
     automatic_payment_methods: {
       enabled: true,
     },
+    capture_method: "automatic",
   });
-
-  console.log(res);
 
   return new NextResponse(
     JSON.stringify({

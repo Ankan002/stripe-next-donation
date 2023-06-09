@@ -42,6 +42,10 @@ const WrappedFunction = () => {
     console.log(someRes);
   };
 
+  // const options: StripePaymentElementOptions = {
+  //   fields: 
+  // } 
+
   return (
     <>
       <PaymentElement />

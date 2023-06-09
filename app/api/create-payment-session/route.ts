@@ -24,9 +24,10 @@ export const POST = async (req: NextRequest) => {
         quantity: 1,
       },
     ],
-    success_url: "http://localhost:3000/session-checkout",
+    success_url: "http://localhost:3000/success-page",
     cancel_url: "http://localhost:3000/session-checkout",
-    payment_method_types: ["card"]
+    payment_method_types: ["card"],
+    
   });
 
   console.log(session);
