@@ -35,7 +35,7 @@ const WrappedFunction = () => {
       elements,
       clientSecret: data.data.client_secret,
       confirmParams: {
-        return_url: "http://localhost:3000",
+        return_url: "http://localhost:3000/success-page",
       },
     });
 
@@ -58,7 +58,7 @@ const WrappedFunction = () => {
 export default function Home() {
   const stripePromise = loadStripe(process.env["NEXT_PUBLIC_PUBLIC_KEY"] ?? "");
   const options: StripeElementsOptions = {
-    amount: 2000,
+    amount: 100,
     mode: "payment",
     currency: "inr",
     appearance: {
